@@ -5,10 +5,10 @@
 * defaults for the URI.
 */
 
-Route::set('user', 'user(/<action>)')
+Route::set('user', 'user(/<action>(/<id>))')
     ->defaults(array(
         'controller' => 'user',
-        'action'     => 'register'
+        'action'     => 'profile'
 ));
 
 Route::set('security', '<action>', array('action' => 'login|logout'))
